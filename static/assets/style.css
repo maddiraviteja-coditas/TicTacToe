@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Set minimum height for full viewport */
+    background-color: #f0f0f0;  /* Optional background color */
+  }
+  
+  .congrat-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .buttons {
+    margin-top: 30px;
+  }
+  
+  #play-again {
+    background-color: #4CAF50;  /* Green color for button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #play-again:hover {
+    background-color: #3e8e41;  /* Darker green on hover */
+  }
+  
