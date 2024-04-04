@@ -2,4 +2,4 @@ tictactoe/.env
 tictactoe/prompts.txt
 tictactoe/main.py
 static/admin
-assets/admin
+static\admin
