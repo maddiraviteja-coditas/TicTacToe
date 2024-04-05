@@ -12,20 +12,20 @@ def game(request):
         # print(do_reset) # Just for debugging
 
         if do_reset == "True":
-            data = play(reset = True)
-            return render(request,"index.html", {"data" : data[0]})
+            ai_response = play(reset = True)
+            return render(request,"index.html", {"ai_response" : ai_response[0]})
         
         position = req.get("cell")
         # print(position)  #Just for debugging
-        data = play(int(position))
-        if data[1]["is_completed"] == True:
+        ai_response = play(int(position))
+        if ai_response[1]["is_completed"] == True:
             play(reset = True)
-            return render(request, 'winner.html', {"data" : data[1]["who_won"]})
+            return render(request, 'winner.html', {"ai_response" : ai_response[1]["who_won"]})
         
-        print(data[1])
-        return render(request, 'index.html',{"data":data[0],"additional_data" : data[1]})
+        print(ai_response[1])
+        return render(request, 'index.html',{"ai_response":ai_response[0],"additional_data" : ai_response[1]})
     else:
-        data = [1,2,3]
-        return render(request,'index.html',{"data" :data})
+        ai_response = [1,2,3]
+        return render(request,'index.html',{"ai_response" :ai_response})
 
 

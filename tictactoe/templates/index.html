@@ -47,23 +47,23 @@
 </head>
 <body>
   <div class="container mt-5">
-    {%if data%}
+    {%if ai_response%}
     <form   action="/game" method="POST">
       {%csrf_token%}
       <div class="board-row">
-        <button type="submit" name="cell" value="1" class="btn btn-board btn-primary">{{data.0.0}}</button>
-        <button type="submit" name="cell" value="2" class="btn btn-board btn-secondary">{{data.0.1}}</button>
-        <button type="submit" name="cell" value="3" class="btn btn-board btn-success">{{data.0.2}}</button>
+        <button type="submit" name="cell" value="1" class="btn btn-board btn-primary">{{ai_response.0.0}}</button>
+        <button type="submit" name="cell" value="2" class="btn btn-board btn-secondary">{{ai_response.0.1}}</button>
+        <button type="submit" name="cell" value="3" class="btn btn-board btn-success">{{ai_response.0.2}}</button>
       </div>
       <div class="board-row">
-        <button type="submit" name="cell" value="4" class="btn btn-board btn-danger">{{data.1.0}}</button>
-        <button type="submit" name="cell" value="5" class="btn btn-board btn-primary">{{data.1.1}}</button>
-        <button type="submit" name="cell" value="6" class="btn btn-board btn-secondary">{{data.1.2}}</button>
+        <button type="submit" name="cell" value="4" class="btn btn-board btn-danger">{{ai_response.1.0}}</button>
+        <button type="submit" name="cell" value="5" class="btn btn-board btn-primary">{{ai_response.1.1}}</button>
+        <button type="submit" name="cell" value="6" class="btn btn-board btn-secondary">{{ai_response.1.2}}</button>
       </div>
       <div class="board-row">
-        <button type="submit" name="cell" value="7" class="btn btn-board btn-success">{{data.2.0}}</button>
-        <button type="submit" name="cell" value="8" class="btn btn-board btn-danger">{{data.2.1}}</button>
-        <button type="submit" name="cell" value="9" class="btn btn-board btn-primary">{{data.2.2}}</button>
+        <button type="submit" name="cell" value="7" class="btn btn-board btn-success">{{ai_response.2.0}}</button>
+        <button type="submit" name="cell" value="8" class="btn btn-board btn-danger">{{ai_response.2.1}}</button>
+        <button type="submit" name="cell" value="9" class="btn btn-board btn-primary">{{ai_response.2.2}}</button>
       </div>
       <div class="reset-btn">
         <button type="submit" class="btn btn-secondary" value = "True" name = "reset">Reset</button>
