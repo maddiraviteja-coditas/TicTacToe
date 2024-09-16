@@ -1,0 +1,8 @@
+tictactoe/.env
+tictactoe/prompts.txt
+tictactoe/main.py
+static/admin
+game/__pycache__
+tictactoe/__pycache__
+tictactoe/migrations
+db.sqlite3
